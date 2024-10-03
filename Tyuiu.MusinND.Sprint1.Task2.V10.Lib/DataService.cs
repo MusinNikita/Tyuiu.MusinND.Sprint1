@@ -7,7 +7,7 @@ namespace Tyuiu.MusinND.Sprint1.Task2.V10.Lib
         public double ConvertMetreToInchs(int value)
         {
             double inches = 39.37;
-            double metreToInchs = value * inches;
+            double metreToInchs = Math.Round(value * inches, 2);
             return metreToInchs;
         }
     }
