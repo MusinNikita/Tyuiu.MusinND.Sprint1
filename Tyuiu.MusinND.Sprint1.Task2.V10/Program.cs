@@ -29,9 +29,8 @@ namespace Tyuiu.MusinND.Sprint1.Task1.V6
 
             Console.WriteLine("Введите количество метров для перевода в дюймы:");
             x = Convert.ToInt32(Console.ReadLine());
-            double inches = Math.Round(ds.ConvertMetreToInchs(x), 3);
 
-            Console.WriteLine($"{inches} дюймов");
+            Console.WriteLine($"{ds.ConvertMetreToInchs(x)} дюймов");
             Console.ReadKey();
         }
     }
