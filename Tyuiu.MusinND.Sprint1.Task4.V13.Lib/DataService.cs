@@ -10,8 +10,8 @@ namespace Tyuiu.MusinND.Sprint1.Task4.V13.Lib
             double eToTheXSummY = Math.Exp(x+y);
             double cosinePart = Math.Cos(pi / x);
             double result = cosinePart / (3 * eToTheXSummY);
-           
-            return result;
+            double roundedResult = Math.Round(result, 3);
+            return roundedResult;
         }
     }
 }
