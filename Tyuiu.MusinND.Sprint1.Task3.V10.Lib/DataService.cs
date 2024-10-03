@@ -6,10 +6,9 @@ namespace Tyuiu.MusinND.Sprint1.Task3.V10.Lib
     {
         public double NumberToMoney(double number)
         {
-            int rub = Convert.ToInt32(number);
-            int kop = Convert.ToInt32((number - rub) * 100);
+            double amount = number;
 
-            return (double)(rub + kop);
+            return (amount);
 
         }
     }
