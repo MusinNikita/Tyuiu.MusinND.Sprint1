@@ -7,11 +7,10 @@ namespace Tyuiu.MusinND.Sprint1.Task4.V13.Lib
         public double Calculate(double x, double y)
         {
             double pi = Math.PI;
-            double eToTheXSummY = Math.Exp(x+y);
+            double eToTheXSummY = Math.Exp(x + y);
             double cosinePart = Math.Cos(pi / x);
-            double result = cosinePart / (3 * eToTheXSummY);
-            double roundedResult = Math.Round(result, 3);
-            return roundedResult;
+            double result = Math.Round((cosinePart / (3 * eToTheXSummY)), 3);
+            return result;
         }
     }
 }
